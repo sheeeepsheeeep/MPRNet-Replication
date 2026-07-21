@@ -1,0 +1,10 @@
+# Ignore local virtual environments
+**/mprnet_env/
+**/venv/
+**/.venv/
+**/env/
+
+# Ignore heavy dataset files 
+**/.git/
+**.tar
+**.zip

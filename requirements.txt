@@ -1,0 +1,5 @@
+scikit-image
+tqdm
+matplotlib
+numpy<2
+opencv-python<4.9

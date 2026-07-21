@@ -1,0 +1,15 @@
+services:
+  mprnet_eval:
+    build: .
+    container_name: mprnet_submission
+    tty: true         
+    stdin_open: true  
+    volumes:
+      - .:/workspace/MPRNet
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
